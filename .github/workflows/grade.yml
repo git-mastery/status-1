@@ -1,0 +1,12 @@
+name: Reusable autograding
+
+on: pull_request_target
+
+jobs:
+  autograding:
+    uses: git-mastery/actions/.github/workflows/grade.yml@main
+    with:
+      repository: ${{ github.repository }}
+      is_local: ${{ vars.IS_LOCAL == 'true' }}
+      actor: ${{ github.actor }}
+    secrets: inherit
