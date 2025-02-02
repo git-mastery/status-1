@@ -16,11 +16,9 @@ git add file*.txt
 
 git commit -m "Change 1"
 
-# Remove permissions to edit these files for user
-chmod -w filea.txt
-chmod -w fileb.txt
-chmod -w filec.txt
-
 echo "This is a change" >>file14.txt
 
 touch file77.txt
+
+# Remove permissions to edit these files for user
+chmod -w file{1..100}.txt
