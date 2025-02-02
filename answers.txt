@@ -1,5 +1,5 @@
 Q: What file was newly added?
-A: file77.txt
+A: 
 
 Q: What file was edited?
-A: file14.txt
+A:
